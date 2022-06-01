@@ -1,15 +1,15 @@
 var choice_d, choice_t, d1, d2, d_type, f_d1, f_d2, f_t1, f_t2, f_v1, f_v2, t1, t2, t_type, v1, v2, v_type, x, y;
-d1 = input("Enter d1  :");
-d2 = input("Enter d2  :");
-$type = input("Enter d type (km/m)(compulsory) :");
-t1 = input("Enter t1  :");
-t2 = input("Enter t2  :");
-t_type = input("Enter t type (s/hrs)(compulsory) :");
-v1 = input("Enter v1  :");
-v2 = input("Enter v2  :");
-v_type = input("Enter v type (kmph/mps)(compulsory) :");
+d1 = prompt("Enter d1  :");
+d2 = prompt("Enter d2  :");
+d_type = prompt("Enter d type (km/m)(compulsory) :");
+t1 = prompt("Enter t1  :");
+t2 = prompt("Enter t2  :");
+t_type = prompt("Enter t type (s/hrs)(compulsory) :");
+v1 = prompt("Enter v1  :");
+v2 = prompt("Enter v2  :");
+v_type = prompt("Enter v type (kmph/mps)(compulsory) :");
 
-if (v_type === "kmph" && ($type === "km" || t_type === "hrs")) {
+if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
   if (d1 === "" && d2 === "" && t1 !== "" && t2 !== "") {
     f_t1 = Number.parseFloat(t1);
     f_t2 = Number.parseFloat(t2);
@@ -71,7 +71,7 @@ if (v_type === "kmph" && ($type === "km" || t_type === "hrs")) {
   console.log("Average speed (in m/s) is : ", y, "m/s");
 }
 
-if (v_type === "mps" && $type === "m" || v_type === "mps" && t_type === "s") {
+if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
   if (d1 === "" && d2 === "" && t1 !== "" && t2 !== "") {
     f_t1 = Number.parseFloat(t1);
     f_t2 = Number.parseFloat(t2);
@@ -133,7 +133,7 @@ if (v_type === "mps" && $type === "m" || v_type === "mps" && t_type === "s") {
   console.log("Average speed (in m/s) is : ", x, "m/s");
 }
 
-if (v_type === "mps" && $type === "km" || v_type === "mps" && t_type === "hrs") {
+if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs") {
   if (d1 === "" && d2 === "" && t1 !== "" && t2 !== "") {
     f_t1 = Number.parseFloat(t1) * 3600;
     f_t2 = Number.parseFloat(t2) * 3600;
@@ -195,7 +195,7 @@ if (v_type === "mps" && $type === "km" || v_type === "mps" && t_type === "hrs") 
   console.log("Average speed (in m/s) is : ", x, "m/s");
 }
 
-if (v_type === "kmph" && $type === "m" || v_type === "kmph" && t_type === "s") {
+if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") {
   if (d1 === "" && d2 === "" && t1 !== "" && t2 !== "") {
     f_t1 = Number.parseFloat(t1) / 3600;
     f_t2 = Number.parseFloat(t2) / 3600;
