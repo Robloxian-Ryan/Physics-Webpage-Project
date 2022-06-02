@@ -10,7 +10,7 @@ v2 = window.prompt("Enter v2  :");
 v_type = window.prompt("Enter v type (kmph/mps)(compulsory) :");
 
 if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
-  if (d1.value.length == 0 && d2.value.length == 0 && t1.value.length == 0 && t2.value.length == 0) {
+  if (d1.length == 0 && d2.length == 0 && t1.length == 0 && t2.length == 0) {
     f_t1 = Number.parseFloat(t1);
     f_t2 = Number.parseFloat(t2);
     f_v1 = Number.parseFloat(v1);
@@ -24,7 +24,7 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     y = x * (1000 / 3600);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d2.value.length == 0 && d1.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d2.length == 0 && d1.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = Number.parseFloat(d1);
@@ -38,7 +38,7 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     y = x * (1000 / 3600);
   }
 
-  if (v1.value.length == 0 && v2.value.length == 0) {
+  if (v1.length == 0 && v2.length == 0) {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = Number.parseFloat(t1);
@@ -47,7 +47,7 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     y = x * (1000 / 3600);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d1.value.length == 0 && d2.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d1.length == 0 && d2.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
@@ -72,7 +72,7 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
 }
 
 if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
-  if (d1.value.length == 0 && d2.value.length == 0 && t1.value.length == 0 && t2.value.length == 0) {
+  if (d1.length == 0 && d2.length == 0 && t1.length == 0 && t2.length == 0) {
     f_t1 = Number.parseFloat(t1);
     f_t2 = Number.parseFloat(t2);
     f_v1 = Number.parseFloat(v1);
@@ -86,7 +86,7 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d2.value.length == 0 && d1.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d2.length == 0 && d1.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = Number.parseFloat(d1);
@@ -100,7 +100,7 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     y = x * (3600 / 1000);
   }
 
-  if (v1.value.length == 0 && v2.value.length == 0) {
+  if (v1.length == 0 && v2.length == 0) {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = Number.parseFloat(t1);
@@ -109,7 +109,7 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d1.value.length == 0 && d2.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d1.length == 0 && d2.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
@@ -134,7 +134,7 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
 }
 
 if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs") {
-  if (d1.value.length == 0 && d2.value.length == 0 && t1.value.length == 0 && t2.value.length == 0) {
+  if (d1.length == 0 && d2.length == 0 && t1.length == 0 && t2.length == 0) {
     f_t1 = Number.parseFloat(t1) * 3600;
     f_t2 = Number.parseFloat(t2) * 3600;
     f_v1 = Number.parseFloat(v1);
@@ -148,7 +148,7 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d2.value.length == 0 && d1.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d2.length == 0 && d1.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = Number.parseFloat(d1) * 1000;
@@ -162,7 +162,7 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     y = x * (3600 / 1000);
   }
 
-  if (v1.value.length == 0 && v2.value.length == 0) {
+  if (v1.length == 0 && v2.length == 0) {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = Number.parseFloat(t1);
@@ -171,7 +171,7 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d1.value.length == 0 && d2.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d1.length == 0 && d2.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
@@ -196,7 +196,7 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
 }
 
 if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") {
-  if (d1.value.length == 0 && d2.value.length == 0 && t1.value.length == 0 && t2.value.length == 0) {
+  if (d1.length == 0 && d2.length == 0 && t1.length == 0 && t2.length == 0) {
     f_t1 = Number.parseFloat(t1) / 3600;
     f_t2 = Number.parseFloat(t2) / 3600;
     f_v1 = Number.parseFloat(v1);
@@ -210,7 +210,7 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d2.value.length == 0 && d1.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d2.length == 0 && d1.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = Number.parseFloat(d1) / 1000;
@@ -224,7 +224,7 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     y = x * (3600 / 1000);
   }
 
-  if (v1.value.length == 0 && v2.value.length == 0) {
+  if (v1.length == 0 && v2.length == 0) {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = Number.parseFloat(t1);
@@ -233,7 +233,7 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     y = x * (3600 / 1000);
   }
 
-  if (t1.value.length == 0 && t2.value.length == 0 && d1.value.length == 0 && d2.value.length == 0) {
+  if (t1.length == 0 && t2.length == 0 && d1.length == 0 && d2.length == 0) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
