@@ -16,10 +16,10 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = f_t1 * f_v1;
-    console.log("d1 = t1*v1 and d2 = t2*v2");
+    document.write("d1 = t1*v1 and d2 = t2*v2");
     f_d2 = f_t2 * f_v2;
-    console.log("d1 :", f_d1, "km");
-    console.log("d2 :", f_d2, "km");
+    document.write("d1 :", f_d1, "km");
+    document.write("d2 :", f_d2, "km");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (1000 / 3600);
   }
@@ -30,10 +30,10 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = f_d1 / f_v1;
-    console.log("t1 = d1/v1 and t2 = d2/v2");
+    document.write("t1 = d1/v1 and t2 = d2/v2");
     f_t2 = f_d2 / f_v2;
-    console.log("t1 is : ", f_t1, "hrs");
-    console.log("t2 is : ", f_t2, "hrs");
+    document.write("t1 is : ", f_t1, "hrs");
+    document.write("t2 is : ", f_t2, "hrs");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (1000 / 3600);
   }
@@ -50,10 +50,10 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
   if (t1 === "" && t2 === "" && d1 === "" && d2 === "") {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
-    choice_t = input("Is t1 = t2 [Y/N/y/n]");
+    choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
 
     if (choice_t === "n" || choice_t === "N") {
-      choice_d = input("Is d1 = d2 [Y/N/y/n]");
+      choice_d = window.prompt("Is d1 = d2 [Y/N/y/n]");
 
       if (choice_d === "Y" || choice_d === "y") {
         x = 2 / (1 / f_v1 + 1 / f_v2);
@@ -67,8 +67,8 @@ if (v_type === "kmph" && (d_type === "km" || t_type === "hrs")) {
     }
   }
 
-  console.log("Average speed (in km/h) is : ", x, "km/h");
-  console.log("Average speed (in m/s) is : ", y, "m/s");
+  document.write("Average speed (in km/h) is : ", x, "km/h");
+  document.write("Average speed (in m/s) is : ", y, "m/s");
 }
 
 if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
@@ -78,10 +78,10 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = f_t1 * f_v1;
-    console.log("d1 = t1*v1 and d2 = t2*v2");
+    document.write("d1 = t1*v1 and d2 = t2*v2");
     f_d2 = f_t2 * f_v2;
-    console.log("d1 :", f_d1, "m");
-    console.log("d2 :", f_d2, "m");
+    document.write("d1 :", f_d1, "m");
+    document.write("d2 :", f_d2, "m");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -92,10 +92,10 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     f_d1 = Number.parseFloat(d1);
     f_d2 = Number.parseFloat(d2);
     f_t1 = f_d1 / f_v1;
-    console.log("t1 = d1/v1 and t2 = d2/v2");
+    document.write("t1 = d1/v1 and t2 = d2/v2");
     f_t2 = f_d2 / f_v2;
-    console.log("t1 is : ", f_t1, "s");
-    console.log("t2 is : ", f_t2, "s");
+    document.write("t1 is : ", f_t1, "s");
+    document.write("t2 is : ", f_t2, "s");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -112,10 +112,10 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
   if (t1 === "" && t2 === "" && d1 === "" && d2 === "") {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
-    choice_t = input("Is t1 = t2 [Y/N/y/n]");
+    choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
 
     if (choice_t === "n" || choice_t === "N") {
-      choice_d = input("Is d1 = d2 [Y/N/y/n]");
+      choice_d = window.prompt("Is d1 = d2 [Y/N/y/n]");
 
       if (choice_d === "Y" || choice_d === "y") {
         x = 2 / (1 / f_v1 + 1 / f_v2);
@@ -129,8 +129,8 @@ if (v_type === "mps" && d_type === "m" || v_type === "mps" && t_type === "s") {
     }
   }
 
-  console.log("Average speed (in km/h) is : ", y, "km/h");
-  console.log("Average speed (in m/s) is : ", x, "m/s");
+  document.write("Average speed (in km/h) is : ", y, "km/h");
+  document.write("Average speed (in m/s) is : ", x, "m/s");
 }
 
 if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs") {
@@ -140,10 +140,10 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = f_t1 * f_v1;
-    console.log("d1 = t1*v1 and d2 = t2*v2");
+    document.write("d1 = t1*v1 and d2 = t2*v2");
     f_d2 = f_t2 * f_v2;
-    console.log("d1 :", f_d1, "m");
-    console.log("d2 :", f_d2, "m");
+    document.write("d1 :", f_d1, "m");
+    document.write("d2 :", f_d2, "m");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -154,10 +154,10 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     f_d1 = Number.parseFloat(d1) * 1000;
     f_d2 = Number.parseFloat(d2) * 1000;
     f_t1 = f_d1 / f_v1;
-    console.log("t1 = d1/v1 and t2 = d2/v2");
+    document.write("t1 = d1/v1 and t2 = d2/v2");
     f_t2 = f_d2 / f_v2;
-    console.log("t1 is : ", f_t1, "s");
-    console.log("t2 is : ", f_t2, "s");
+    document.write("t1 is : ", f_t1, "s");
+    document.write("t2 is : ", f_t2, "s");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -174,10 +174,10 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
   if (t1 === "" && t2 === "" && d1 === "" && d2 === "") {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
-    choice_t = input("Is t1 = t2 [Y/N/y/n]");
+    choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
 
     if (choice_t === "n" || choice_t === "N") {
-      choice_d = input("Is d1 = d2 [Y/N/y/n]");
+      choice_d = window.prompt("Is d1 = d2 [Y/N/y/n]");
 
       if (choice_d === "Y" || choice_d === "y") {
         x = 2 / (1 / f_v1 + 1 / f_v2);
@@ -191,8 +191,8 @@ if (v_type === "mps" && d_type === "km" || v_type === "mps" && t_type === "hrs")
     }
   }
 
-  console.log("Average speed (in km/h) is : ", y, "km/h");
-  console.log("Average speed (in m/s) is : ", x, "m/s");
+  document.write("Average speed (in km/h) is : ", y, "km/h");
+  document.write("Average speed (in m/s) is : ", x, "m/s");
 }
 
 if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") {
@@ -202,10 +202,10 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
     f_d1 = f_t1 * f_v1;
-    console.log("d1 = t1*v1 and d2 = t2*v2");
+    document.write("d1 = t1*v1 and d2 = t2*v2");
     f_d2 = f_t2 * f_v2;
-    console.log("d1 :", f_d1, "km");
-    console.log("d2 :", f_d2, "km");
+    document.write("d1 :", f_d1, "km");
+    document.write("d2 :", f_d2, "km");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -216,10 +216,10 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     f_d1 = Number.parseFloat(d1) / 1000;
     f_d2 = Number.parseFloat(d2) / 1000;
     f_t1 = f_d1 / f_v1;
-    console.log("t1 = d1/v1 and t2 = d2/v2");
+    document.write("t1 = d1/v1 and t2 = d2/v2");
     f_t2 = f_d2 / f_v2;
-    console.log("t1 is : ", f_t1, "hrs");
-    console.log("t2 is : ", f_t2, "hrs");
+    document.write("t1 is : ", f_t1, "hrs");
+    document.write("t2 is : ", f_t2, "hrs");
     x = (f_d1 + f_d2) / (f_t1 + f_t2);
     y = x * (3600 / 1000);
   }
@@ -236,10 +236,10 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
   if (t1 === "" && t2 === "" && d1 === "" && d2 === "") {
     f_v1 = Number.parseFloat(v1);
     f_v2 = Number.parseFloat(v2);
-    choice_t = input("Is t1 = t2 [Y/N/y/n]");
+    choice_t = window.prompt("Is t1 = t2 [Y/N/y/n]");
 
     if (choice_t === "n" || choice_t === "N") {
-      choice_d = input("Is d1 = d2 [Y/N/y/n]");
+      choice_d = window.prompt("Is d1 = d2 [Y/N/y/n]");
 
       if (choice_d === "Y" || choice_d === "y") {
         x = 2 / (1 / f_v1 + 1 / f_v2);
@@ -253,6 +253,6 @@ if (v_type === "kmph" && d_type === "m" || v_type === "kmph" && t_type === "s") 
     }
   }
 
-  console.log("Average speed (in km/h) is : ", x, "km/h");
-  console.log("Average speed (in m/s) is : ", y, "m/s");
+  document.write("Average speed (in km/h) is : ", x, "km/h");
+  document.write("Average speed (in m/s) is : ", y, "m/s");
 }
