@@ -1,6 +1,6 @@
 var choice_d, choice_t, d1, d2, d_type, f_d1, f_d2, f_t1, f_t2, f_v1, f_v2, t1, t2, t_type, v1, v2, v_type, x, y;
 
-window.focus();
+document.write("If no pop-ups are shown, please reload the page and stay on it. <br><br>")
 
 d1 = window.prompt("Enter d1  :");
 d2 = window.prompt("Enter d2  :");
